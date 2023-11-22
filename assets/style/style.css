@@ -1,4 +1,28 @@
 #ele1 {
-    background-color: green;
+  background-color: green;
 }
 
+section {
+  width: 200px;
+  height: 200px;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+#yellow {
+  background-color: yellow;
+}
+
+#key {
+  background-color: white;
+  border: 1px solid black;
+}
