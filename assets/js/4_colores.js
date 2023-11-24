@@ -34,37 +34,30 @@ colorBoxes.forEach(function (box) {
 });
 
  */
+const keyColor = (color) => {
+document.getElementById("key").style.backgroundColor = color;
+}
+
+const newSection = (color) => {
+  const newSection = document.createElement("section");
+  newSection.style.width = "200px";
+  newSection.style.height = "200px";
+  newSection.style.backgroundColor = color;
+  newSection.style.border = "1px solid black";
+  document.body.appendChild(newSection);  }
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "a") {
-    color = "pink";
-    document.getElementById("key").style.backgroundColor = color;
+ keyColor ('pink')
   } else if (event.key === "s") {
-    color = "orange";
-    document.getElementById("key").style.backgroundColor = color;
+    keyColor ('orange')
   } else if (event.key === "d") {
-    color = "lightblue";
-    document.getElementById("key").style.backgroundColor = color;
+    keyColor ('lightblue')
   } else if (event.key === "q") {
-    const newSection = document.createElement("section");
-    newSection.style.width = "200px";
-    newSection.style.height = "200px";
-    newSection.style.backgroundColor = "purple";
-    newSection.style.border = "1px solid black";
-    document.body.appendChild(newSection);
+    newSection ('purple')
   } else if (event.key === "w") {
-    let newSection = document.createElement("section");
-    newSection.style.width = "200px";
-    newSection.style.height = "200px";
-    newSection.style.backgroundColor = "gray";
-    newSection.style.border = "1px solid black";
-    document.body.appendChild(newSection);
+    newSection ('gray')
   } else if (event.key === "e") {
-    let newSection = document.createElement("section");
-    newSection.style.width = "200px";
-    newSection.style.height = "200px";
-    newSection.style.backgroundColor = "brown";
-    newSection.style.border = "1px solid black";
-    document.body.appendChild(newSection);
+    newSection ('brown')
   }
 });
